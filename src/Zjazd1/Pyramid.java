@@ -11,23 +11,21 @@ public class Pyramid {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        byte a = 'a';
+        char a = 'a';
         int num = 1;
         System.out.println("Write number of pyramid levels: ");
         int n = scanner.nextInt();
 
-        for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= n - i; j++) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n - i; j++) {
                 System.out.print("  ");
             }
             for (int k = 0; k <= num / 2; k++) {
-                System.out.print(((char) Byte.toUnsignedInt(a++)) + " ");
+                System.out.print((char) (a + k) + " ");
             }
 
-            a = (byte) (a - 2);
-
-            for (int j = 0; j < num / 2; j++) {
-                System.out.print(((char) Byte.toUnsignedInt(a--)) + " ");
+            for (int j = num / 2 - 1; j >= 0; j--) {
+                System.out.print((char) (a + j) + " ");
             }
             num = num + 2;
             a = 'a';
