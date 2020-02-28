@@ -37,29 +37,26 @@ public class PolishFlag {
     }
 
     private static void japaneseFlag(int size) {
-        int flagXSize = size * 6;
+        int flagXSize = size * 10;
         int flagYSize = size * 2;
 
         System.out.print(" ");
-        for (int i = 0; i < flagXSize; i++) {
-            System.out.print("__");
-        }
+
         System.out.println();
         for (int j = 0; j < flagYSize + 1; j++) {
-            System.out.print("|");
             for (int i = 0; i < flagXSize; i++) {
 
-                System.out.print(ANSI_BG_BLACK + "##");
+                System.out.print(ANSI_BG_BLACK + "  ");
             }
-            System.out.println(ANSI_RESET + "|");
+            System.out.println(ANSI_RESET);
         }
 
         for (int j = 0; j <= flagYSize; j++) {
-            System.out.print(ANSI_BRIGHT_RED + "|" + ANSI_BG_RED);
+            System.out.print(ANSI_BRIGHT_RED + ANSI_BG_RED);
             for (int i = 0; i < flagXSize; i++) {
-                System.out.print(ANSI_BRIGHT_RED + "/?");
+                System.out.print(ANSI_BRIGHT_RED + "  ");
             }
-            System.out.println(ANSI_RESET + ANSI_BRIGHT_RED + "|");
+            System.out.println(ANSI_RESET + ANSI_BRIGHT_RED);
 
         }
     }
