@@ -25,6 +25,11 @@ public class CesarCode {
         System.out.println(" CipherCode : " + cipherText);
     }
 
+    /**
+     * @param text
+     * @param shiftNumber
+     * @param cipherText
+     */
     private static void cipherCesar(String text, int shiftNumber, StringBuilder cipherText) {
         char alphabet;
         for (int i = 0; i < text.length(); i++) {

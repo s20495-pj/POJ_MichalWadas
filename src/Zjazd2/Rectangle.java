@@ -12,6 +12,11 @@ public class Rectangle {
     private double width;
     private double length;
 
+    /**
+     * @param width
+     * @param length
+     * @return Rectangle circuit
+     */
     private double circuit(int width, int length) {
         this.width = width;
         this.length = length;
@@ -22,16 +27,26 @@ public class Rectangle {
         return circuit;
     }
 
+    /**
+     * @param width
+     * @param length
+     * @return Rectangle diagonal
+     */
     private double diagonal(double width, double length) {
         this.width = width;
         this.length = length;
         double diagonal;
 
-        diagonal = Math.sqrt(Math.pow(width,2) + Math.pow(length,2));
+        diagonal = Math.sqrt(Math.pow(width, 2) + Math.pow(length, 2));
 
         return diagonal;
     }
 
+    /**
+     * @param width
+     * @param length
+     * @return Rectangle field area
+     */
     private double field(double width, double length) {
         this.width = width;
         this.length = length;

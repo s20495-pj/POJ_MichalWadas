@@ -14,6 +14,12 @@ public class Triangle {
     private double sideB;
     private double baseOfTheTriangle;
 
+    /**
+     * @param sideA
+     * @param sideB
+     * @param baseOfTheTriangle
+     * @return triangle circuit
+     */
     private double circuit(double sideA, double sideB, double baseOfTheTriangle) {
         this.sideA = sideA;
         this.sideB = sideB;
@@ -24,6 +30,12 @@ public class Triangle {
         return circuit;
     }
 
+    /**
+     * @param baseOfTheTriangle
+     * @param sideA
+     * @param sideB
+     * @return triangle field area
+     */
     private double field(double baseOfTheTriangle, double sideA, double sideB) {
         this.baseOfTheTriangle = baseOfTheTriangle;
         this.sideA = sideA;
