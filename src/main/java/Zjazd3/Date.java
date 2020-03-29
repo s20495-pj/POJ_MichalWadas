@@ -1,4 +1,4 @@
-package Zjazd3;
+package main.java.Zjazd3;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;

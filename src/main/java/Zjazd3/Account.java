@@ -1,4 +1,4 @@
-package Zjazd3;
+package main.java.Zjazd3;
 
 /**
  * summary: Implement UML chart, exercise 13: Account

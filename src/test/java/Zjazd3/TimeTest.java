@@ -1,6 +1,6 @@
 package test.java.Zjazd3;
 
-import Zjazd3.Time;
+import main.java.Zjazd3.Time;
 import org.junit.Assert;
 import org.junit.Test;
 

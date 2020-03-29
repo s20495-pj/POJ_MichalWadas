@@ -1,4 +1,4 @@
-package Zjazd3;
+package main.java.Zjazd3;
 
 /**
  * Summary: Implement UML chart exercise 12: InvoiceItem
