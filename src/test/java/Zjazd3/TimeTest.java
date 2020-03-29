@@ -1,4 +1,4 @@
-package Zjazd3Tests;
+package test.java.Zjazd3;
 
 import Zjazd3.Time;
 import org.junit.Assert;
