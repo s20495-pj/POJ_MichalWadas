@@ -1,6 +1,4 @@
-package Zjazd3;
-
-import org.junit.Test;
+package main.java.Zjazd3;
 
 /**
  * summary: Implement UML chart, exercise 15: Time

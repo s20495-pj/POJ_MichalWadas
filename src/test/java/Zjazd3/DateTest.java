@@ -1,6 +1,6 @@
-package Zjazd3Tests;
+package test.java.Zjazd3;
 
-import Zjazd3.Date;
+import main.java.Zjazd3.Date;
 import org.junit.Assert;
 import org.junit.Test;
 

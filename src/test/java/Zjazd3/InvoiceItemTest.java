@@ -1,6 +1,6 @@
-package Zjazd3Tests;
+package test.java.Zjazd3;
 
-import Zjazd3.InvoiceItem;
+import main.java.Zjazd3.InvoiceItem;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

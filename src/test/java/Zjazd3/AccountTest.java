@@ -1,10 +1,9 @@
-package Zjazd3Tests;
+package test.java.Zjazd3;
 
-import Zjazd3.Account;
+import main.java.Zjazd3.Account;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
 /**
  * summary: Test Account class
  * author: Michal Wadas
