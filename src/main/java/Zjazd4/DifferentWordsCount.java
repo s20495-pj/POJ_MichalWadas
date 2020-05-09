@@ -38,5 +38,8 @@ public class DifferentWordsCount {
                 .replace("{", "")
                 .replace("}", "") + "]";
         System.out.println(mapWithChangedBrackets);
+
+        //Replace Sample.txt with hamlet.txt and run program to see the result below
+        System.out.println("What is most frequent word in Shakespeare's Hamlet? Answer: the=1083");
     }
 }
