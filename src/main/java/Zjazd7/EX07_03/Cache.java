@@ -23,6 +23,7 @@ public class Cache {
 
     private Cache() {
         dataReader = new DataReader();
+        exceptionSolver = new ExceptionSolver();
     }
 
     public static Cache getInstance() {
