@@ -7,6 +7,7 @@ import Zjazd7.EX07_03.exceptionStrategy.Strategies.OverlappingFileLockExceptionS
 import java.io.IOException;
 import java.nio.channels.OverlappingFileLockException;
 import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
 import java.util.List;
 
 /**
@@ -22,6 +23,7 @@ public class Cache {
 
     private Cache() {
         dataReader = new DataReader();
+        exceptionSolver = new ExceptionSolver();
     }
 
     public static Cache getInstance() {
@@ -31,6 +33,12 @@ public class Cache {
     }
 
     public List<Data> getData() {
+        if (this.lastRefreshTime != null) {
+            long minutes = ChronoUnit.MINUTES.between(this.lastRefreshTime, LocalDateTime.now());
+            if (minutes > 5)
+                refreshData();
+        } else
+            refreshData();
         return this.cache;
     }
 
